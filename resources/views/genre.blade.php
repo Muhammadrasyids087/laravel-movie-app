@@ -11,7 +11,7 @@
 
             <nav>
                 <a
-                    href="/movies/create"
+                    href="/genres/create"
                     class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
                 >
                     Create
@@ -39,23 +39,24 @@
                     </div>
                 </div>
 
+                @foreach ($genres as $genre)
                 <div class="grid grid-cols-6 border-t border-stroke px-4 py-4.5 dark:border-strokedark sm:grid-cols-8 md:px-6 2xl:px-7.5">
                     <div class="col-span-1 flex items-center">
                         <div class="flex flex-col gap-4 sm:flex-row sm:items-center">
                             
                             <p class="text-sm font-medium text-black dark:text-white">
-                                1
+                            {{$genre['id'] }}
                             </p>
                         </div>
                     </div>
                     <div class="col-span-2 items-center sm:flex">
                         <p class="text-sm font-medium text-black dark:text-white">
-                        Jojo Bizarre Adventure
+                            {{$genre['title'] }}
                         </p>
                     </div>
                     <div class="col-span-4 flex items-center">
                         <p class="text-sm font-medium text-black dark:text-white">
-                        JoJo's Bizarre Adventure adalah anime petualangan yang tidak selalu berlatar di satu tempat. Anime ini selalu menjelajahi tempat baru di setiap episode, arc, dan musimnya. Anime juga selalu memiliki cara yang unik dalam memperkenalkan karakter baru atau kekuatan baru.
+                            {{$genre['description'] }}
                         </p>
                     </div>
                     <div class="col-span-1 flex items-center">
@@ -65,110 +66,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="grid grid-cols-6 border-t border-stroke px-4 py-4.5 dark:border-strokedark sm:grid-cols-8 md:px-6 2xl:px-7.5">
-                    <div class="col-span-1 flex items-center">
-                        <div class="flex flex-col gap-4 sm:flex-row sm:items-center">
-                            
-                            <p class="text-sm font-medium text-black dark:text-white">
-                                2
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-span-2 items-center sm:flex">
-                        <p class="text-sm font-medium text-black dark:text-white">
-                        Noragami
-                        </p>
-                    </div>
-                    <div class="col-span-4 flex items-center">
-                        <p class="text-sm font-medium text-black dark:text-white">
-                        Noragami 13 menceritakan tentang Hiyori Iki, seorang siswi SMP yang tertabrak sebuah bus ketika dia ingin menyelamatkan nyawa seseorang laki-laki bernama Yato. Setelah adanya insiden ini, dirinya yang semula manusia berubah menjadi setengah hantu.
-                        </p>
-                    </div>
-                    <div class="col-span-1 flex items-center">
-                        <div class="flex items-center space-x-1">
-                            <a href="" class="inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20">Edit</a>
-                            <a href="" class="inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-800 ring-1 ring-inset ring-red-600/20">Delete</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid grid-cols-6 border-t border-stroke px-4 py-4.5 dark:border-strokedark sm:grid-cols-8 md:px-6 2xl:px-7.5">
-                    <div class="col-span-1 flex items-center">
-                        <div class="flex flex-col gap-4 sm:flex-row sm:items-center">
-                            
-                            <p class="text-sm font-medium text-black dark:text-white">
-                                3
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-span-2 items-center sm:flex">
-                        <p class="text-sm font-medium text-black dark:text-white">
-                        Wind Breaker
-                        </p>
-                    </div>
-                    <div class="col-span-4 flex items-center">
-                        <p class="text-sm font-medium text-black dark:text-white">
-                        Seorang murid bernama Haruka Sakura yang bercita-cita menjadi siswa terkuat di SMA Furin, yang terkenal dengan keberadaan para jagoan.
-                        </p>
-                    </div>
-                    <div class="col-span-1 flex items-center">
-                        <div class="flex items-center space-x-1">
-                            <a href="" class="inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20">Edit</a>
-                            <a href="" class="inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-800 ring-1 ring-inset ring-red-600/20">Delete</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid grid-cols-6 border-t border-stroke px-4 py-4.5 dark:border-strokedark sm:grid-cols-8 md:px-6 2xl:px-7.5">
-                    <div class="col-span-1 flex items-center">
-                        <div class="flex flex-col gap-4 sm:flex-row sm:items-center">
-                            
-                            <p class="text-sm font-medium text-black dark:text-white">
-                                4
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-span-2 items-center sm:flex">
-                        <p class="text-sm font-medium text-black dark:text-white">
-                        Spy x Family
-                        </p>
-                    </div>
-                    <div class="col-span-4 flex items-center">
-                        <p class="text-sm font-medium text-black dark:text-white">
-                        Politisi yang korup, nasionalis yang hiruk pikuk, dan kekuatan penghasut lainnya terus membahayakan lapisan tipis perdamaian.
-                        </p>
-                    </div>
-                    <div class="col-span-1 flex items-center">
-                        <div class="flex items-center space-x-1">
-                            <a href="" class="inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20">Edit</a>
-                            <a href="" class="inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-800 ring-1 ring-inset ring-red-600/20">Delete</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid grid-cols-6 border-t border-stroke px-4 py-4.5 dark:border-strokedark sm:grid-cols-8 md:px-6 2xl:px-7.5">
-                    <div class="col-span-1 flex items-center">
-                        <div class="flex flex-col gap-4 sm:flex-row sm:items-center">
-                            
-                            <p class="text-sm font-medium text-black dark:text-white">
-                                5
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-span-2 items-center sm:flex">
-                        <p class="text-sm font-medium text-black dark:text-white">
-                        Demon Slayer
-                        </p>
-                    </div>
-                    <div class="col-span-4 flex items-center">
-                        <p class="text-sm font-medium text-black dark:text-white">
-                        Tanjiro bertekad menjadi pembunuh iblis untuk membalaskan dendam keluarganya dan menyembuhkan saudara perempuannya. Sebuah keluarga diserang oleh iblis dan hanya dua anggota yang bertahan - Tanjiro dan saudara perempuannya Nezuko, yang perlahan berubah menjadi iblis. Tanjiro bertekad menjadi pembunuh iblis untuk membalaskan dendam keluarganya dan menyembuhkan saudara perempuannya.
-                        </p>
-                    </div>
-                    <div class="col-span-1 flex items-center">
-                        <div class="flex items-center space-x-1">
-                            <a href="" class="inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20">Edit</a>
-                            <a href="" class="inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-800 ring-1 ring-inset ring-red-600/20">Delete</a>
-                        </div>
-                    </div>
-                </div>
+                @endforeach  
             </div>
 
             <!-- ====== Table Two End -->
