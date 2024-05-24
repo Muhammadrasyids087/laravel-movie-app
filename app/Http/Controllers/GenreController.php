@@ -9,9 +9,8 @@ class GenreController extends Controller
 {
     public function genre()
     {
-        $genres = New Genre();
-        $genres = $genres->getAllGenres();
+        $genres = Genre::all();
 
-        return view('genre', ['genres' => $genres]);
+        return view('genre', compact('genres'));
     }
 }
