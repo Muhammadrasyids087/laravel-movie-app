@@ -35,6 +35,14 @@ class MovieSeeder extends Seeder
             'poster' => 'movie-03.jpg',
             'synopsis' => 'Haruka Sakura wants nothing to do with weaklings—hes only interested in the strongest of the strong.',
         ]);
+
+        Movie::create([
+            'id' => 4,
+            'title' => 'Spy x Family',
+            'genre_id' => '4',
+            'poster' => 'movie-04.jpg',
+            'synopsis' => 'Japanese manga series written and illustrated by Tatsuya Endo. The story follows a spy who has to "build a family" to execute a mission, not realizing that his adopted daughter is a telepath, and the woman he agrees to marry is a skilled assassin.',
+        ]);
         
     }
 }

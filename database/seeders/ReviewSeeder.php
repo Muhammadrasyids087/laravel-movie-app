@@ -14,7 +14,6 @@ class ReviewSeeder extends Seeder
     public function run(): void
     {
         Review::create([
-            'id' => 1,
             'title' => 'Jojo Bizzare Adventure',
             'user' => 'Naruto',
             'rate' => 8.0,
@@ -22,7 +21,6 @@ class ReviewSeeder extends Seeder
         ]);
 
         Review::create([
-            'id' => 2,
             'title' => 'Noragami',
             'user' => 'Sai',
             'rate' => 8.5,
@@ -30,7 +28,6 @@ class ReviewSeeder extends Seeder
         ]);
 
         Review::create([
-            'id' => 3,
             'title' => 'Wind Breaker',
             'user' => 'Kakashi',
             'rate' => 8.7,
@@ -38,7 +35,6 @@ class ReviewSeeder extends Seeder
         ]);
 
         Review::create([
-            'id' => 4,
             'title' => 'Spy x Family',
             'user' => 'Sakura',
             'rate' => 9.0,
@@ -46,7 +42,6 @@ class ReviewSeeder extends Seeder
         ]);
 
         Review::create([
-            'id' => 5,
             'title' => 'Demon Slayer',
             'user' => 'Sasuke',
             'rate' => 9.4,
@@ -54,7 +49,6 @@ class ReviewSeeder extends Seeder
         ]);
 
         Review::create([
-            'id' => 6,
             'title' => 'My Hero Academia',
             'user' => 'Rock Lee',
             'rate' => 9.2,
@@ -62,7 +56,6 @@ class ReviewSeeder extends Seeder
         ]);
 
         Review::create([
-            'id' => 7,
             'title' => 'Jujutsu Kaisen',
             'user' => 'Tenten',
             'rate' => 9.5,
@@ -70,7 +63,6 @@ class ReviewSeeder extends Seeder
         ]);
 
         Review::create([
-            'id' => 8,
             'title' => 'Attack on Titan',
             'user' => 'Shikamaru',
             'rate' => 9.1,
