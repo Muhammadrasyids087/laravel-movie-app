@@ -43,6 +43,14 @@ class MovieSeeder extends Seeder
             'poster' => 'movie-04.jpg',
             'synopsis' => 'Japanese manga series written and illustrated by Tatsuya Endo. The story follows a spy who has to "build a family" to execute a mission, not realizing that his adopted daughter is a telepath, and the woman he agrees to marry is a skilled assassin.',
         ]);
+
+        Movie::create([
+            'id' => 5,
+            'title' => 'Demon Slayer',
+            'genre_id' => '5',
+            'poster' => 'movie-05.jpg',
+            'synopsis' => 'Japanese manga series written and illustrated by Koyoharu Gotōge, and it is about Tanjiro Kamado, a young boy who becomes a demon slayer after his family is slaughtered and his younger sister Nezuko is turned into a demon.',
+        ]);
         
     }
 }
