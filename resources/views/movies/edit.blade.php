@@ -57,7 +57,7 @@
                             Movie Form
                         </h3>
                     </div>
-                    <form action="/movies/{{ $movie->id }}" method="POST">
+                    <form enctype="multipart/form-data" action="/movies/{{ $movie->id }}" method="POST">
                         @csrf
                         @method('PUT')
                         <div class="p-6.5">
@@ -104,17 +104,17 @@
                                     </span>
                                 </div>
                             </div>
-
+                            <img class="object-cover w-36 mb-2" src="/src/images/movie/{{ $movie->poster}}" alt="">
                             <div class="mb-4.5">
                                 <label class="mb-3 block text-sm font-medium text-black"> 
                                     Poster 
                                     <span class="text-meta-1">*</span> 
                                 </label>
+                                
                                 <input
                                     id="poster"
                                     name="poster"
-                                    value="{{$movie->poster}}"
-                                    type="text"
+                                    type="file"
                                     placeholder="Enter poster link"
                                     class="w-full rounded border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter"
                                 />
